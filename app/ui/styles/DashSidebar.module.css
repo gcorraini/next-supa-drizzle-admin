@@ -1,0 +1,28 @@
+.sidebar {
+  width: 280px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  border-right: 1px solid #dee2e6;
+}
+
+.sidebar .nav-link {
+  margin-bottom: 10px;
+}
+
+.sidebar .nav-link.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.sidebarBrand {
+  padding: 1px 0px 0px 0px;
+  height: 33px;
+  font-size: 1.25rem;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+
+}

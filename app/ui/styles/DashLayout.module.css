@@ -1,0 +1,13 @@
+.layout {
+    margin-bottom: 0px;
+    display: flex;
+}
+
+.content {
+    padding: 90px 20px 20px 20px;
+    top: 0;
+    right: 0;
+    left: 277px;
+    bottom: 0;
+    position: absolute;
+}
