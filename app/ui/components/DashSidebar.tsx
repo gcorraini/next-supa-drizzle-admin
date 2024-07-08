@@ -3,11 +3,9 @@
 import React from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
 import styles from '@/app/ui/styles/DashSidebar.module.css';
 import { MdDashboard, MdPerson, MdSettings, MdLogout, MdFeedback } from "react-icons/md";
 import { LuCupSoda } from "react-icons/lu";
-import { hrtime } from "process";
 
 
 export default function DashSidebar() {
@@ -25,7 +23,7 @@ export default function DashSidebar() {
   const createLinks = (routes: any) => {
     return routes.map((link: any, key: any) => {
       if (link.href === 'hr') {
-        return (<hr />);
+        return (<hr key={key}/>);
       }
       return (
         <NavItem key={key} active={pathname === link.href}>

@@ -26,17 +26,17 @@ export default function DashNavBar() {
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="mr-auto" navbar>
-          <NavItem>
+          <NavItem key="home">
             <NavLink href="/" active={pathname === "/"}>
               Home
             </NavLink>
           </NavItem>
-          <NavItem>
+          <NavItem key="about">
             <NavLink href="/about" active={pathname === "/about"}>
               About
             </NavLink>
           </NavItem>
-          <NavItem>
+          <NavItem key="dash">
             <NavLink href="/dash" active={pathname === "/dash"}>
               Dashboard
             </NavLink>
