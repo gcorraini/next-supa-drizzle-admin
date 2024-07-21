@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { usePathname } from 'next/navigation'
 //import Link from 'next/link'
 import styles from "@/app/ui/styles/DashNavbar.module.css"
+import { FaBootstrap } from "react-icons/fa";
+import { IconContext } from "react-icons";
+
 
 import {
   Collapse,
@@ -22,10 +25,15 @@ export default function DashNavBar() {
   // className={styles.topbar}
   return (
     <Navbar color="dark" dark expand="md" className={styles.topbar}>
-      <NavbarBrand href="/"></NavbarBrand>
+      <NavbarBrand href="/">
+        <IconContext.Provider value={{ size: "2em" }}>
+          <FaBootstrap />
+        </IconContext.Provider>
+      </NavbarBrand>
+
       <NavbarToggler onClick={toggle} />
-      <Collapse isOpen={isOpen} navbar>
-        <Nav className="mr-auto" navbar>
+      <Collapse className="text-bg-dark" isOpen={isOpen} navbar>
+        <Nav className="mr-auto p-2" navbar>
           <NavItem key="home">
             <NavLink href="/" active={pathname === "/"}>
               Home

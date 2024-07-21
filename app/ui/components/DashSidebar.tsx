@@ -4,8 +4,7 @@ import React from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";
 import { usePathname } from "next/navigation";
 import styles from '@/app/ui/styles/DashSidebar.module.css';
-import { MdDashboard, MdPerson, MdSettings, MdLogout, MdFeedback } from "react-icons/md";
-import { LuCupSoda } from "react-icons/lu";
+import { MdBusinessCenter, MdDashboard, MdPerson, MdSettings, MdLogout, MdFeedback } from "react-icons/md";
 
 
 export default function DashSidebar() {
@@ -39,7 +38,7 @@ export default function DashSidebar() {
   return (
     <div className={`bg-dark text-white ${styles.sidebar}`} >
       <div id="sidebarBrand" className={`${styles.sidebarBrand}`}>
-        <span><LuCupSoda /> Cubata</span>
+        <span><MdBusinessCenter /> My App</span>
       </div>
       <hr />
       <Nav vertical pills card color="dark">{createLinks(navLinks)}</Nav>

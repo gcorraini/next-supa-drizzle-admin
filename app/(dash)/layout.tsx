@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Col, Container, Row } from "reactstrap";
 
 import DashNavBar from "@/app/ui/components/DashNavBar";
+import DashTopBar from "@/app/ui/components/DashTopBar";
 import DashSidebar from "@/app/ui/components/DashSidebar";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dashboard",
-  description: "Cubata Dashboard",
+  description: "My Dashboard",
 };
 
 export default function DashLayout({
@@ -39,7 +40,8 @@ export default function DashLayout({
           </Col>
           <Col xs="auto" className={`vh-100 overflow-auto`}>
             <div id="content-root" className={`${styles.content}`}>
-              <DashNavBar />
+              {/* <DashNavBar /> */}
+              <DashTopBar />
               {children}
             </div>
           </Col>

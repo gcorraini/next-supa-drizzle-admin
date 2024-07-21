@@ -6,14 +6,10 @@ export default function Page() {
   return (
     <>
     <div className={`container-fluid text-start ${styles.descriptionRow}`}>
-      <h2 className="mt-5 pb-2 border-bottom text-start">Cubata Chrome Extension</h2>
+      <h2 className="mt-5 pb-2 border-bottom text-start">Section introduction</h2>
       <br />
       <p className="text-start lead">
-        Cubata is a Chrome extension designed as a companion app for Dynatrace
-        Real User Monitoring (RUM) injection. It enhances your browsing
-        experience by detecting competitor modules on webpages and providing
-        insights into Dynatrace RUM configurations, along with error and warning
-        reporting from the JSAgent.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt assumenda fugit perspiciatis atque qui quos eum incidunt adipisci voluptate provident est cumque obcaecati debitis, nobis quia ratione harum. Maiores, earum!
       </p>
       <br />
     </div>
@@ -24,51 +20,50 @@ export default function Page() {
             <div className="col d-flex align-items-start">
               <MdOutlineFindInPage className={`flex-shrink-0 me-3 text-white ${styles.featureIcon}`}/>
               <div>
-                <h4 className="fw-bold mb-0">Competitor Module Detection</h4>
+                <h4 className="fw-bold mb-0">Feature #1</h4>
                 <p className="mt-2">
-                Automatically detects competitor modules on webpages and changes the extension icon color to signal the presence of competitor modules.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit corrupti rem fugiat nam, quibusdam dolore unde? Facere, laboriosam explicabo quam aperiam earum non libero aliquid nostrum excepturi dolorem vero quaerat.
                 </p>
               </div>
             </div>
             <div className="col d-flex align-items-start">
               <MdFeedback className={`flex-shrink-0 me-3 text-white ${styles.featureIcon}`}/>
               <div>
-                <h4 className="fw-bold mb-0">Feedback Submission</h4>
+                <h4 className="fw-bold mb-0">Feature #2</h4>
                 <p className="mt-2">
-                Allows users to submit feedback to our database when competitor modules are detected. Facilitates sales assessment by collecting real-time competitive intelligence.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, officiis. Molestiae iure fugit eligendi maiores error sed assumenda. Cupiditate eos nobis at quo doloremque distinctio nam. Architecto eligendi dolore quidem?
                 </p>
               </div>
             </div>
             <div className="col d-flex align-items-start">
               <BiSolidInjection className={`flex-shrink-0 me-3 text-white ${styles.featureIcon}`}/>
               <div>
-                <h4 className="fw-bold mb-0">Dynatrace RUM Injection Detection</h4>
+                <h4 className="fw-bold mb-0">Feature #3</h4>
                 <p className="mt-2">
-                Identifies Dynatrace RUM injection on the current page. Retrieves and displays detailed configuration information.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam deleniti tempore laudantium porro mollitia ad commodi sapiente ipsa officia fugiat officiis, voluptas optio consequuntur sit, aut libero rerum accusamus!
                 </p>
               </div>
             </div>
             <div className="col d-flex align-items-start">
               <MdWarning className={`flex-shrink-0 me-3 text-white ${styles.featureIcon}`}/>
               <div>
-                <h4 className="fw-bold mb-0">Error and Warning Reporting</h4>
+                <h4 className="fw-bold mb-0">Feature #4</h4>
                 <p className="mt-2">
-                Shows errors and warnings coming from the Dynatrace JSAgent. Helps in quickly identifying and troubleshooting issues related to Dynatrace RUM.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas similique, in nostrum ex, praesentium architecto aliquid optio, quos corporis modi incidunt labore. Illo ea, aliquam hic assumenda expedita et.
                 </p>
               </div>
             </div>
             <div className="col d-flex align-items-start">
               <MdSettings className={`flex-shrink-0 me-3 text-white ${styles.featureIcon}`}/>
               <div>
-                <h4 className="fw-bold mb-0">Detailed Configuration View</h4>
+                <h4 className="fw-bold mb-0">Feature #5</h4>
                 <p className="mt-2">
-                Provides comprehensive details about the detected Dynatrace RUM configuration upon clicking the extension icon.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt amet, vel aliquid temporibus reprehenderit dolorum quae placeat ab veniam doloremque in, fuga consequuntur omnis! Necessitatibus impedit iusto aut ipsa!
                 </p>
               </div>
             </div>
           </div>
       </div>
-      <hr />
     </>
   );
 }
